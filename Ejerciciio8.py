@@ -20,10 +20,11 @@ que hay entre ambas fechas y dividirlo por 7, ya que una semana tiene 7 días.
 Si la persona está en edad de trabajar, devolver el número de lunes calculado en el paso 3. En caso contrario, devolver 0
 """
 def lunes(cumpleaños, fecha_actual):
-    Edad = cumpleaños[0] - fecha_actual[0]
+    Edad = fecha_actual[0] - cumpleaños[0]
     if Edad >= 22 and Edad <= 78:
-        total_lunes = (Edad*365)/7
-    return total_lunes
+        return (Edad*365)/7
+    else:
+        return 0
 print(lunes([1986, 4, 8], [2014, 6, 19]))
 
 
