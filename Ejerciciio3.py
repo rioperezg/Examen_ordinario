@@ -20,9 +20,9 @@ Para cualquier número entero entre 0 y 999, devuelva una matriz que muestre la 
 # Debemos equilibrar el numero de letras de cada palabra = al numero en si
 def Equilibrio(n):
     # Decclaramos los numero primero del 1 al 10
-    numeros_iniciales= [0,1,2,3,4,5,6,7,8,9]
+    numeros_iniciales = ("0123456789")
     Corresp = {0:"zero",1:"one",2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine"}
-    for i in range(n):
+    for i in n:
         for j in range(numeros_iniciales):
             for k in range(Corresp):
                 if i == j:
@@ -31,7 +31,7 @@ def Equilibrio(n):
                 else:
                     pass
                 break
-print(Equilibrio(60))
+print(Equilibrio("60"))
         
                 
         
