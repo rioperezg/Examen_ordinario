@@ -14,8 +14,8 @@ hollow_triangle(9)
 """
 def Hollow_triangle(n):
     for i in range(1, n+1):
-        return(("_"*(n-i) + "#") + ("_"*(2*i-3) + "#")*(i>1) + ("_"*(n-i)) 
-    
+        print(("_"*(n-i) + "#") + ("_"*(2*i-3) + "#")*(i>1) + ("_"*(n-i)))    
+    return None
 print(Hollow_triangle(6))
 
 
