@@ -21,38 +21,19 @@ Para cualquier número entero entre 0 y 999, devuelva una matriz que muestre la 
 def Equilibrio(n):
     # Decclaramos los numero primero del 1 al 10
     numeros_iniciales= [0,1,2,3,4,5,6,7,8,9]
-    cero = 0
-    uno = 1
-    dos = 2
-    tres = 3
-    cuatro = 4
-    cinco = 5
-    seis = 6
-    siete = 7
-    ocho = 8
-    nueve = 9
-    for i in range(0,10):
-        if numeros_iniciales[i] == n:
-            if numeros_iniciales[i] == 0:
-                return cero
-            elif numeros_iniciales[i] == 1:
-                return uno
-            elif numeros_iniciales[i] == 2:
-                return dos
-            elif numeros_iniciales[i] == 3:
-                return tres
-            elif numeros_iniciales[i] == 4:
-                return cuatro
-            elif numeros_iniciales[i] == 5:
-                return cinco
-            elif numeros_iniciales[i] == 6:
-                return seis
-            elif numeros_iniciales[i] == 7:
-                return siete
-            elif numeros_iniciales[i] == 8:
-                return ocho
-            elif numeros_iniciales[i] == 9:
-                return nueve
+    Corresp = {0:"zero",1:"one",2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine"}
+    for i in n:
+        for j in numeros_iniciales:
+            for k in Corresp:
+                if i == j:
+                    print(Corresp[k])
+                    break
+                else:
+                    pass
+                break
+        
+                
+        
 
 
 
