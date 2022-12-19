@@ -22,6 +22,27 @@ Realizar los cálculos especificados en el enunciado utilizando los números ord
 entero más cercano y devolverlo como resultado de la función
 24z6 1x23 y369 89a 900b" = 89 + 900 - 123 * 369 / 246 = 1299
 """
+def do_math(cadena):
+    lista = cadena.split()
+    diccionario = {}
+    for i in lista:
+        for j in i:
+            if j.isalpha():
+                diccionario[j] = int(i.replace(j, ''))
+    diccionario = dict(sorted(diccionario.items()))
+    lista = list(diccionario.values())
+    resultado = lista[0]
+    for i in range(1, len(lista)):
+        if i % 4 == 1:
+            resultado += lista[i]
+        elif i % 4 == 2:
+            resultado -= lista[i]
+        elif i % 4 == 3:
+            resultado *= lista[i]
+        elif i % 4 == 0:
+            resultado /= lista[i]
+    return round(resultado)
+
 
 
 
