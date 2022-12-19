@@ -26,11 +26,12 @@ def Equilibrio(n):
         for j in numeros_iniciales:
             for k in Corresp:
                 if i == j:
-                    print(Corresp[k])
+                    return(Corresp[k])
                     break
                 else:
                     pass
                 break
+print(Equilibrio(60))
         
                 
         
