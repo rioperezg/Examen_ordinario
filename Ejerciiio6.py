@@ -41,7 +41,8 @@ def main(diametro, porcentaje):
     area_protegida = area * porcentaje
     circunferencia = 2 * 3.1416 * radio
     longitud_maxima = circunferencia * area_protegida
-    print("La longitud maxima de la cuerda necesaria para que burro no pueda comer mas del porcentaje dado de esa area es de: ", longitud_maxima, " pasos de ogro")
+    return("La longitud maxima de la cuerda necesaria para que burro no pueda comer mas del porcentaje dado de esa area es de: ", longitud_maxima, " pasos de ogro")
+print(main(10, 0.5))
 
 
 
