@@ -13,8 +13,8 @@ hollow_triangle(9)
  '___#_________#___', '__#___________#__', '_#_____________#_', '#################']
 """
 def Hollow_triangle(n):
-    for i in 1:n
-        print(" "*(n-i) + "#" + i + "#" + " "*(n-i))
+    for i in range(1, n+1):
+        print(" "*(n-i) + "#" + i*" " + "#" + " "*(n-i))
         return None
 print(Hollow_triangle(6))
 
