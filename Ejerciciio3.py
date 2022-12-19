@@ -24,9 +24,12 @@ def Equilibrio(n):
     Corresp = {0:"zero",1:"one",2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine"}
     for i in n:
         for j in numeros_iniciales:
-            for k in Corresp:
-                if i == j:
-                    return(Corresp[k])
+            if i == j:
+                for k in Corresp:
+                    if j == k:
+                    # Ahora hemos de considerar la longitud de la palabra  == al numero
+                        if len(Corresp[k]) == int(i):
+                            print("Hemos llegado a un equilibrio estable") 
                     break
                 else:
                     pass
