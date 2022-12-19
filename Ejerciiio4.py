@@ -42,7 +42,7 @@ def do_math(cadena):
         elif i % 4 == 0:
             resultado /= lista[i]
     return round(resultado)
-
+print(do_math("24z6 1x23 y369 89a 900b"))
 
 
 
