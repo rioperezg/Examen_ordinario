@@ -35,11 +35,7 @@ Circunferencia = 2 * pi * radio
 Cuidado: en Fairy Land, ¡los parches de hierba pueden crecer mucho!
 Adjuntar archivo
 """
-def main():
-    print("Ingrese el diametro del parche circular de pasto en pasos de ogro")
-    diametro = int(input())
-    print("Ingrese el porcentaje de pasto que no puede comer burro")
-    porcentaje = float(input())
+def main(diametro, porcentaje):
     radio = diametro / 2
     area = 3.1416 * (radio ** 2)
     area_protegida = area * porcentaje
