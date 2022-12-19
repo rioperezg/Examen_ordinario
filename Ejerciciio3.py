@@ -25,13 +25,13 @@ def Equilibrio(n):
         for j in Corresp:
             if j == i:
                     # Ahora hemos de considerar la longitud de la palabra  == al numero
-                if len(Corresp[k]) == int(i):
+                if len(Corresp[j]) == i:
                     print("Hemos llegado a un equilibrio estable") 
                 break
             else:
                 pass
             break
-print(Equilibrio("4"))
+print(Equilibrio("60"))
         
                 
         
