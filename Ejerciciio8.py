@@ -28,7 +28,7 @@ def lunes(cumpleaños, fecha_actual):
                     cumpleaños[i] = cumpleaños[i].replace(j)
                     lista.append(cumpleaños[i] - cumpleaños[j])
     return lista
-
+print(lunes([1986, 4, 8], [2014, 6, 19]))
 
 
 
