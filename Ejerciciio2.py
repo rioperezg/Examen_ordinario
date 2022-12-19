@@ -33,6 +33,12 @@ para mantenerlo más simple, la cadena en la entrada está restringida para repr
 por lo que no encontrará algo como `-3 + yx ^ 2'. Multilineal significa en este contexto: de grado 1 sobre cada variable.
 la cadena de entrada puede contener variables arbitrarias representadas por caracteres en minúsculas en el alfabeto inglés.
 """
+def simplify():
+    # Debemos simplioficar ecuaciones mediante la regla de la suma y la del producto de exponentes. Identificaremos aquellos terminos 
+    # que no estan multiplicados por otras incognitas y los agruparemos y aquellos qu si estan multiplicados por otras incognitas 
+    # y los agrupamos, pero cmomom hacemos tal cosa. la ecuacion que se introduce converitda en cadena de caracteres. con condicionales
+    # ....
+
 
 
 
