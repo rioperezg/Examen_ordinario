@@ -35,14 +35,14 @@ Circunferencia = 2 * pi * radio
 Cuidado: en Fairy Land, ¡los parches de hierba pueden crecer mucho!
 Adjuntar archivo
 """
-def main(diametro, porcentaje):
-    radio = diametro / 2
+def Fairy_Land(diam, percent):
+    radio = diam / 2
     area = 3.1416 * (radio ** 2)
-    area_protegida = area * porcentaje
+    area_protegida = area * percent
     circunferencia = 2 * 3.1416 * radio
     longitud_maxima = circunferencia * area_protegida
     return("La longitud maxima de la cuerda necesaria para que burro no pueda comer mas del porcentaje dado de esa area es de: ", longitud_maxima, " pasos de ogro")
-print(main(10, 0.5))
+print(Fairy_Land(10, 0.5))
 
 
 
